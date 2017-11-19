@@ -1,0 +1,41 @@
+﻿@model WebApplication2.Models.ZadanieDB
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ZadanieDB</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Towar)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Towar)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataWprow)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataWprow)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataModyf)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DataModyf)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
